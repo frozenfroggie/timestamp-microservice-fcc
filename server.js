@@ -27,7 +27,7 @@ app.get('/:date', function(req, res) {
   }
   else if (!isNaN(Date.parse(userInput))) { // if normal date
     outputObj["natural_date"] = userInput;
-    outputObj["unix_timestamp"] = Date.parse(userInput) / 1000; // theres nothing to check- date always will be formated to number without any problems
+    outputObj["unix_timestamp"] = Date.parse(userInput) / 1000; // there's nothing to check- date always will be formated to number without any problems
   }
   else {
     outputObj["natural_date"] = null;
